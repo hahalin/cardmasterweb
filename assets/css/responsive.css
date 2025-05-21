@@ -1,0 +1,205 @@
+/* responsive.css - 響應式樣式調整 */
+
+/* 大屏幕 */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* 平板和小型桌面 */
+@media (max-width: 991.98px) {
+  /* 導航欄調整 */
+  .navbar-nav .nav-link.btn {
+    margin-left: 0 !important;
+    margin-top: 0.5rem;
+  }
+  
+  /* 英雄區域 */
+  .hero-section {
+    padding: 60px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* App 截圖容器 */
+  .app-screenshots-container {
+    margin-top: 2rem;
+  }
+  
+  /* 功能卡片 */
+  .feature-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* 快速入門區域 */
+  .quickstart-section .col-md-6:first-child {
+    margin-bottom: 2rem;
+  }
+  
+  /* 團隊成員卡片 */
+  .team-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* 時間線調整 */
+  .timeline:before {
+    left: 40px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+    margin-left: 0;
+    padding-left: 70px;
+  }
+  
+  .timeline-badge {
+    left: 27px;
+    right: auto;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-badge {
+    left: 27px;
+  }
+  
+  .timeline-panel::after,
+  .timeline-item:nth-child(even) .timeline-panel::after {
+    display: none;
+  }
+}
+
+/* 手機設備 */
+@media (max-width: 767.98px) {
+  /* 英雄區域 */
+  .hero-section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section .lead {
+    font-size: 1.1rem;
+  }
+  
+  .hero-section .btn {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  
+  .hero-section .btn + .btn {
+    margin-left: 0 !important;
+  }
+  
+  /* App 截圖容器 */
+  .app-screenshots-container {
+    justify-content: center;
+  }
+  
+  .app-screenshot {
+    max-width: 40% !important;
+  }
+  
+  /* 功能區域 */
+  .features-section h2,
+  .quickstart-section h2,
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+  
+  /* 頁頭 */
+  .page-header {
+    padding: 30px 0;
+  }
+  
+  /* 影片卡片 */
+  .video-card .card-img-top {
+    height: 160px;
+  }
+  
+  /* 聯繫圖標 */
+  .contact-icon,
+  .mission-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* 標籤導航 */
+  .nav-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-tabs .nav-link {
+    white-space: nowrap;
+  }
+  
+  /* 頁腳 */
+  .footer {
+    text-align: center;
+  }
+  
+  .footer .text-md-start,
+  .footer .text-md-end {
+    text-align: center !important;
+  }
+}
+
+/* 極小手機設備 */
+@media (max-width: 575.98px) {
+  /* 英雄區域 */
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+  
+  /* App 截圖 */
+  .app-screenshot {
+    max-width: 45% !important;
+  }
+  
+  /* 影片卡片 */
+  .video-card .card-img-top {
+    height: 140px;
+  }
+  
+  /* 模態視窗 */
+  .modal-body {
+    padding: 0;
+  }
+  
+  /* 時間線 */
+  .timeline-item {
+    padding-left: 60px;
+  }
+  
+  .timeline:before {
+    left: 30px;
+  }
+  
+  .timeline-badge {
+    left: 17px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 0.75rem;
+  }
+  
+  .timeline-panel {
+    padding: 15px;
+  }
+  
+  .timeline-title {
+    font-size: 1rem;
+  }
+}

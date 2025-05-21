@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>常見問題 - Card Master</title>
+  <meta name="description" content="查看 Card Master 應用的常見問題與解答，幫助您快速解決疑難。">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- 自定義CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 頁頭容器 -->
+  <div id="header-container"></div>
+  
+  <!-- 頁面標題 -->
+  <section class="page-header py-5 bg-light">
+    <div class="container">
+      <h1 class="display-5">常見問題</h1>
+      <p class="lead">找到您對 Card Master 應用的疑問解答，快速解決使用上的問題。</p>
+    </div>
+  </section>
+  
+  <!-- 常見問題區域 -->
+  <section class="faq-section py-5">
+    <div class="container">
+      <!-- 問題搜尋 -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <div class="input-group">
+            <input type="text" class="form-control" id="faqSearch" placeholder="搜尋問題...">
+            <button class="btn btn-primary" type="button">
+              <i class="fas fa-search"></i> 搜尋
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 問題分類標籤 -->
+      <ul class="nav nav-pills justify-content-center mb-4" id="faqTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab">一般問題</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="account-tab" data-bs-toggle="tab" data-bs-target="#account" type="button" role="tab">帳號相關</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="features-tab" data-bs-toggle="tab" data-bs-target="#features" type="button" role="tab">功能相關</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="import-tab" data-bs-toggle="tab" data-bs-target="#import" type="button" role="tab">匯入問題</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button" role="tab">技術支援</button>
+        </li>
+      </ul>
+      
+      <!-- 標籤內容 -->
+      <div class="tab-content" id="faqTabsContent">
+        <!-- 一般問題 -->
+        <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+          <div class="accordion" id="generalAccordion">
+            <!-- 問題 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="general-heading-1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapse-1" aria-expanded="true" aria-controls="general-collapse-1">
+                  Card Master 支援哪些平台和設備？
+                </button>
+              </h2>
+              <div id="general-collapse-1" class="accordion-collapse collapse show" aria-labelledby="general-heading-1" data-bs-parent="#generalAccordion">
+                <div class="accordion-body">
+                  目前 Card Master 支援 Android 平台，可在 Google Play 商店下載。應用需要 Android 6.0 (Marshmallow) 或更高版本。我們正在開發 iOS 版本，預計將在未來幾個月推出。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 問題 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="general-heading-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapse-2" aria-expanded="false" aria-controls="general-collapse-2">
+                  Card Master 是免費的嗎？有什麼付費功能？
+                </button>
+              </h2>
+              <div id="general-collapse-2" class="accordion-collapse collapse" aria-labelledby="general-heading-2" data-bs-parent="#generalAccordion">
+                <div class="accordion-body">
+                  Card Master 採用免費增值模式。基本功能包括建立學科與科目、創建學習卡片、基本學習模式等都是完全免費的。高級功能如批次匯入、進階統計分析、雲端同步等需要訂閱 Card Master Premium 方案。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 問題 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="general-heading-3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapse-3" aria-expanded="false" aria-controls="general-collapse-3">
+                  學習卡片有數量限制嗎？
+                </button>
+              </h2>
+              <div id="general-collapse-3" class="accordion-collapse collapse" aria-labelledby="general-heading-3" data-bs-parent="#generalAccordion">
+                <div class="accordion-body">
+                  免費版可以建立最多 500 張學習卡片。Premium 訂閱用戶可以建立無限量的學習卡片。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 問題 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="general-heading-4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapse-4" aria-expanded="false" aria-controls="general-collapse-4">
+                  我可以在多個設備上使用同一個帳號嗎？
+                </button>
+              </h2>
+              <div id="general-collapse-4" class="accordion-collapse collapse" aria-labelledby="general-heading-4" data-bs-parent="#generalAccordion">
+                <div class="accordion-body">
+                  可以。Premium 用戶可以在多個設備上登入同一帳號，並通過雲端同步功能保持數據一致。免費用戶可以登入多個設備，但不支援自動同步功能，需要手動匯出和匯入數據。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 帳號相關 -->
+        <div class="tab-pane fade" id="account" role="tabpanel" aria-labelledby="account-tab">
+          <div class="accordion" id="accountAccordion">
+            <!-- 帳號問題 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="account-heading-1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#account-collapse-1" aria-expanded="true" aria-controls="account-collapse-1">
+                  如何註冊 Card Master 帳號？
+                </button>
+              </h2>
+              <div id="account-collapse-1" class="accordion-collapse collapse show" aria-labelledby="account-heading-1" data-bs-parent="#accountAccordion">
+                <div class="accordion-body">
+                  您可以通過以下方式註冊 Card Master 帳號：
+                  <ol>
+                    <li>開啟 Card Master 應用</li>
+                    <li>點擊「註冊」按鈕</li>
+                    <li>使用電子郵件地址或 Google/Facebook 帳號註冊</li>
+                    <li>填寫必要資訊並完成註冊流程</li>
+                  </ol>
+                  註冊帳號可以幫助您備份和同步數據，以及訂閱 Premium 功能。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 帳號問題 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="account-heading-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#account-collapse-2" aria-expanded="false" aria-controls="account-collapse-2">
+                  忘記密碼怎麼辦？
+                </button>
+              </h2>
+              <div id="account-collapse-2" class="accordion-collapse collapse" aria-labelledby="account-heading-2" data-bs-parent="#accountAccordion">
+                <div class="accordion-body">
+                  如果您忘記了密碼，可以通過以下步驟重設：
+                  <ol>
+                    <li>在登入頁面點擊「忘記密碼」</li>
+                    <li>輸入您註冊時使用的電子郵件地址</li>
+                    <li>檢查您的電子郵件收件箱並點擊重設密碼連結</li>
+                    <li>設置新密碼並登入</li>
+                  </ol>
+                  如果您使用 Google 或 Facebook 登入，則無需密碼，直接使用相應服務登入即可。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 更多帳號問題... -->
+          </div>
+        </div>
+        
+        <!-- 功能相關 -->
+        <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="features-tab">
+          <div class="accordion" id="featuresAccordion">
+            <!-- 功能問題 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="features-heading-1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#features-collapse-1" aria-expanded="true" aria-controls="features-collapse-1">
+                  如何切換深色模式？
+                </button>
+              </h2>
+              <div id="features-collapse-1" class="accordion-collapse collapse show" aria-labelledby="features-heading-1" data-bs-parent="#featuresAccordion">
+                <div class="accordion-body">
+                  Card Master 支援深色模式，可以保護您的眼睛並提供更舒適的閱讀體驗。切換深色模式的步驟：
+                  <ol>
+                    <li>打開 Card Master 應用</li>
+                    <li>點擊右上角的「設定」圖標</li>
+                    <li>在設定菜單中找到「外觀」選項</li>
+                    <li>選擇「深色模式」、「淺色模式」或「跟隨系統」</li>
+                  </ol>
+                  選擇「跟隨系統」選項可以讓應用根據您設備的系統設定自動切換深淺色模式。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 功能問題 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="features-heading-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#features-collapse-2" aria-expanded="false" aria-controls="features-collapse-2">
+                  如何建立學習清單？
+                </button>
+              </h2>
+              <div id="features-collapse-2" class="accordion-collapse collapse" aria-labelledby="features-heading-2" data-bs-parent="#featuresAccordion">
+                <div class="accordion-body">
+                  建立學習清單的步驟：
+                  <ol>
+                    <li>進入卡片頁面</li>
+                    <li>選擇您要加入學習清單的卡片</li>
+                    <li>點擊頂部的「加入學習清單」按鈕</li>
+                    <li>選擇現有學習清單或創建新的學習清單</li>
+                    <li>設置學習參數</li>
+                    <li>點擊「確認」完成設置</li>
+                  </ol>
+                  學習清單創建後，您可以在「學習」標籤中找到您的所有學習清單。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 更多功能問題... -->
+          </div>
+        </div>
+        
+        <!-- 匯入問題 -->
+        <div class="tab-pane fade" id="import" role="tabpanel" aria-labelledby="import-tab">
+          <div class="accordion" id="importAccordion">
+            <!-- 匯入問題 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="import-heading-1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#import-collapse-1" aria-expanded="true" aria-controls="import-collapse-1">
+                  我可以一次匯入多少張卡片？
+                </button>
+              </h2>
+              <div id="import-collapse-1" class="accordion-collapse collapse show" aria-labelledby="import-heading-1" data-bs-parent="#importAccordion">
+                <div class="accordion-body">
+                  免費用戶可以一次匯入最多 100 張卡片，Premium 用戶可以一次匯入最多 500 張卡片。如果您需要匯入更多卡片，可以分批進行。請注意，匯入的卡片計入您的卡片總數限制。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 匯入問題 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="import-heading-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#import-collapse-2" aria-expanded="false" aria-controls="import-collapse-2">
+                  匯入時出現錯誤怎麼辦？
+                </button>
+              </h2>
+              <div id="import-collapse-2" class="accordion-collapse collapse" aria-labelledby="import-heading-2" data-bs-parent="#importAccordion">
+                <div class="accordion-body">
+                  匯入錯誤通常有以下幾種原因：
+                  <ul>
+                    <li><strong>格式錯誤</strong>：確保您使用的是正確的 Excel 模板，且未修改欄位名稱</li>
+                    <li><strong>必要欄位缺失</strong>：確保問題、答案等必要欄位已填寫</li>
+                    <li><strong>檔案大小</strong>：確保檔案大小不超過 10MB</li>
+                    <li><strong>特殊字符</strong>：避免在文本中使用過多特殊字符</li>
+                  </ul>
+                  如果繼續遇到問題，應用會提供具體的錯誤訊息，幫助您排除問題。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 更多匯入問題... -->
+          </div>
+        </div>
+        
+        <!-- 技術支援 -->
+        <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
+          <div class="accordion" id="techAccordion">
+            <!-- 技術問題 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tech-heading-1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tech-collapse-1" aria-expanded="true" aria-controls="tech-collapse-1">
+                  如何備份我的卡片數據？
+                </button>
+              </h2>
+              <div id="tech-collapse-1" class="accordion-collapse collapse show" aria-labelledby="tech-heading-1" data-bs-parent="#techAccordion">
+                <div class="accordion-body">
+                  備份卡片數據的步驟：
+                  <ol>
+                    <li>打開 Card Master 應用</li>
+                    <li>進入「設定」頁面</li>
+                    <li>選擇「數據管理」</li>
+                    <li>點擊「匯出數據」</li>
+                    <li>選擇匯出格式（建議使用 .cardmaster 格式）</li>
+                    <li>選擇存儲位置</li>
+                  </ol>
+                  Premium 用戶的數據會自動備份到雲端，可在「數據管理」中查看備份歷史並進行還原。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 技術問題 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="tech-heading-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tech-collapse-2" aria-expanded="false" aria-controls="tech-collapse-2">
+                  應用閃退或無法正常運行怎麼辦？
+                </button>
+              </h2>
+              <div id="tech-collapse-2" class="accordion-collapse collapse" aria-labelledby="tech-heading-2" data-bs-parent="#techAccordion">
+                <div class="accordion-body">
+                  如果應用出現閃退或無法正常運行，請嘗試以下步驟：
+                  <ol>
+                    <li>重新啟動應用</li>
+                    <li>重新啟動設備</li>
+                    <li>檢查應用是否有可用更新</li>
+                    <li>清除應用緩存（設定 > 應用 > Card Master > 儲存空間 > 清除緩存）</li>
+                    <li>確保設備存儲空間充足</li>
+                    <li>卸載並重新安裝應用（請先備份數據！）</li>
+                  </ol>
+                  如果問題仍然存在，請通過應用內的「意見反饋」功能或發送電子郵件至 support@cardmaster.app 聯繫我們的技術支援團隊。
+                </div>
+              </div>
+            </div>
+            
+            <!-- 更多技術問題... -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 聯繫支援 -->
+  <section class="contact-support-section py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="mb-4">找不到您的問題？</h2>
+          <p class="mb-4">如果您在此頁面找不到問題的答案，請聯繫我們的支援團隊。我們通常會在 24 小時內回覆。</p>
+          <a href="mailto:support@cardmaster.app" class="btn btn-primary">
+            <i class="fas fa-envelope me-2"></i>聯繫支援
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 頁腳容器 -->
+  <div id="footer-container"></div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- 自定義JS -->
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
